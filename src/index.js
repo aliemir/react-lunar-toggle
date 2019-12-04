@@ -1,7 +1,6 @@
 import React from 'react'
 import Toggle from 'react-toggle'
 import SunCalc from 'suncalc'
-import 'styles.css'
 
 const Moon = () => {
   const phase = SunCalc.getMoonIllumination().phase
