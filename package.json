@@ -1,6 +1,6 @@
 {
   "name": "react-lunar-toggle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dark Mode toggle with lunar phase emojis for React.",
   "main": "dist/index.js",
   "scripts": {
