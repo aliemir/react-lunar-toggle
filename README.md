@@ -2,7 +2,7 @@
 
 🌑 🌒 🌓 🌔 🌕 🌖 🌗 🌘 🌑
 
-!(toggle.gif)
+![gif](toggle.gif)
 
 react-toggle with lunar phases, for fancy dark mode toggles.
 
