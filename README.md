@@ -19,3 +19,7 @@ npm install react-lunar-toggle
 ```jsx
 <LunarToggle />
 ```
+
+## Styling
+
+you need to add the styles from [src/styles.css](src/styles.css)
