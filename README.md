@@ -1,4 +1,5 @@
-# react-lunar-toggle
+# react-lunar-toggle [![npm version](https://badge.fury.io/js/react-lunar-toggle.svg)](https://www.npmjs.com/package/react-lunar-toggle)
+
 
 🌑 🌒 🌓 🌔 🌕 🌖 🌗 🌘 🌑
 
