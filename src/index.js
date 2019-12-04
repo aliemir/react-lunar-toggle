@@ -1,4 +1,42 @@
-import React from "react";
+import React from 'react'
+import Toggle from 'react-toggle'
+import SunCalc from 'suncalc'
+import 'styles.css'
 
-const MyComponent = () => <h1>Hello from My Component</h1>;
-export default MyComponent;
+const Moon = () => {
+  const phase = SunCalc.getMoonIllumination().phase
+  if (phase < 0.05) {
+    return '🌑'
+  } else if (phase >= 0.05 && phase < 0.235) {
+    return '🌒'
+  } else if (phase >= 0.235 && phase < 0.275) {
+    return '🌓'
+  } else if (phase >= 0.275 && phase < 0.475) {
+    return '🌔'
+  } else if (phase >= 0.475 && phase < 0.535) {
+    return '🌕'
+  } else if (phase >= 0.535 && phase < 0.735) {
+    return '🌖'
+  } else if (phase >= 0.735 && phase < 0.775) {
+    return '🌗'
+  } else if (phase >= 0.775) {
+    return '🌘'
+  } else {
+    return 'a'
+  }
+}
+
+const Sun = () => {
+  return '☀️'
+}
+
+const LunarToggle = ({ ...toggleProps }) => (
+  <Toggle
+    {...toggleProps}
+    icons={{
+      checked: <Moon />,
+      unchecked: <Sun />,
+    }}
+  />
+)
+export default LunarToggle
