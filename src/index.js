@@ -30,9 +30,9 @@ const Sun = () => {
   return '☀️'
 }
 
-const LunarToggle = ({ ...toggleProps }) => (
+const LunarToggle = props => (
   <Toggle
-    {...toggleProps}
+    {...props}
     icons={{
       checked: <Moon />,
       unchecked: <Sun />,
