@@ -18,8 +18,6 @@ var _suncalc = require('suncalc');
 
 var _suncalc2 = _interopRequireDefault(_suncalc);
 
-require('styles.css');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Moon = function Moon() {
