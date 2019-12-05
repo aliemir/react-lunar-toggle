@@ -2,8 +2,9 @@ import React from 'react'
 import Toggle from 'react-toggle'
 import SunCalc from 'suncalc'
 
-const Moon = () => {
-  const phase = SunCalc.getMoonIllumination().phase
+const Moon = ({ date }) => {
+  const d = date instanceof Date ? date : Date.now()
+  const phase = SunCalc.getMoonIllumination(d).phase
   if (phase < 0.05) {
     return '🌑'
   } else if (phase >= 0.05 && phase < 0.235) {
@@ -21,7 +22,7 @@ const Moon = () => {
   } else if (phase >= 0.775) {
     return '🌘'
   } else {
-    return 'a'
+    return '☀️'
   }
 }
 
@@ -33,7 +34,7 @@ const LunarToggle = props => (
   <Toggle
     {...props}
     icons={{
-      checked: <Moon />,
+      checked: <Moon date={props.date} />,
       unchecked: <Sun />,
     }}
   />

@@ -1,13 +1,22 @@
 {
   "name": "react-lunar-toggle",
   "version": "1.0.4",
-  "description": "Dark Mode toggle with lunar phase emojis for React.",
+  "description": "Dark Mode toggle with lunar phase emojis for React. One side sun, other side is the moon with lunar phase of the current date",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "transpile": "babel src -d dist --copy-files",
     "prepublish": "npm run transpile"
   },
+  "keywords": [
+    "lunar",
+    "lunar phases",
+    "dark mode",
+    "react toggle",
+    "react",
+    "emoji",
+    "moon"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:aliemir/react-lunar-toggle.git"
